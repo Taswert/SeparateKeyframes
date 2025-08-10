@@ -54,15 +54,15 @@ class $modify(EditorUI) {
 		return objArr;
 	}
 
-	void selectObject(GameObject* p0, bool p1) {
-		if (auto kfo = dynamic_cast<KeyframeGameObject*>(p0)) {
-			std::cout << kfo->m_keyframeGroup << " Group\n";
-			std::cout << kfo->m_keyframeIndex << " Index\n";
-			std::cout << GameManager::sharedState()->getEditorLayer()->m_keyframeGroup << " Next KF-Group\n";
-			std::cout << "\n";
-		}
-		EditorUI::selectObject(p0, p1);
-	}
+	//void selectObject(GameObject* p0, bool p1) {
+	//	if (auto kfo = dynamic_cast<KeyframeGameObject*>(p0)) {
+	//		std::cout << kfo->m_keyframeGroup << " Group\n";
+	//		std::cout << kfo->m_keyframeIndex << " Index\n";
+	//		std::cout << GameManager::sharedState()->getEditorLayer()->m_keyframeGroup << " Next KF-Group\n";
+	//		std::cout << "\n";
+	//	}
+	//	EditorUI::selectObject(p0, p1);
+	//}
 };
 
 //$on_mod(Loaded) {
