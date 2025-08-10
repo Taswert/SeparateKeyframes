@@ -14,8 +14,8 @@ class $modify(EditorUI) {
 			//std::cout << "Keyframe Grouping Disabled, skipping Keyframe Grouping\n";
 			return EditorUI::pasteObjects(p0, p1, p2);
 		}
-
-		if (skfMode == "Multi-Object" && p0.find_first_of(';') == p0.find_last_of(';')) {
+		
+		if (skfMode == "Multi-Object" && static_cast<std::string>(p0).find_first_of(';') == static_cast<std::string>(p0).find_last_of(';')) {
 			//std::cout << "Multi-Object Paste Detected, skipping Keyframe Grouping\n";
 			return EditorUI::pasteObjects(p0, p1, p2);
 		}
