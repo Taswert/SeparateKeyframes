@@ -1,0 +1,13 @@
+# Separate Keyframes
+**<cr>WARNING:</c>** The mod works when **COPYING KEYFRAMES**, so please read the mod description carefully!
+
+This mod separates keyframes from each other when copying. Transferring keyframes by copy option from level to level will also prevent those situations in which previously keyframes could for some reason attach to each other.
+
+## Settings
+Also, the mod works in several modes: **"Never"**, **"Multi-Object"** and **"Always"**.
+* **Never** - Works as in vanilla GD, i.e. does not separate keyframes when copying them.
+* **Multi-Object** - Separates keyframes when copying them only when you select several objects. It will also work when you copy one keyframe and ANY object independent of it.
+* **Alway** - Always separates keyframes when copying.
+
+## Credits
+Requested by: **CHRAPIVA**

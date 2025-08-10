@@ -1,0 +1,28 @@
+{
+	"geode": "4.7.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "taswert.separatekeyframes",
+	"name": "Separate Keyframes",
+	"version": "v1.0.0",
+	"developer": "Taswert",
+	"description": "Separates keyframes when copying them.",
+	"tags": [
+		"editor",
+		"offline",
+		"enhancement",
+		"utility"
+	],
+	"settings": {
+		"skf-mode": {
+			"type": "string",
+			"name": "Separate Keyframes Mode",
+			"default": "Multi-Object",
+			"one-of": [ "Never", "Multi-Object", "Always" ]
+		}
+	}
+}
