@@ -8,7 +8,7 @@
 	},
 	"id": "taswert.separatekeyframes",
 	"name": "Separate Keyframes",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "Taswert",
 	"description": "Separates keyframes when copying them.",
 	"tags": [

@@ -14,7 +14,7 @@ class $modify(EditorUI) {
 			return EditorUI::pasteObjects(p0, p1, p2);
 		}
 		
-		if (skfMode == "Multi-Object" && static_cast<std::string>(p0).find_first_of(';') == static_cast<std::string>(p0).find_last_of(';')) {
+		if (skfMode == "Multi-Object" && std::string_view(p0).find_first_of(';') == std::string_view(p0).find_last_of(';')) {
 			return EditorUI::pasteObjects(p0, p1, p2);
 		}
 
@@ -22,12 +22,10 @@ class $modify(EditorUI) {
 		int iterator = 0;
 		std::unordered_map<int, int> keyframeGroupMap;
 
-		lel->m_keyframeGroup += iterator;
-
 		auto objArr = EditorUI::pasteObjects(p0, p1, p2);
 
 		for (auto obj : CCArrayExt<GameObject*>(objArr)) {
-			if (auto kfo = dynamic_cast<KeyframeGameObject*>(obj)) {
+			if (auto kfo = typeinfo_cast<KeyframeGameObject*>(obj)) {
 				auto kfg = kfo->m_keyframeGroup;
 				auto kfi = kfo->m_keyframeIndex;
 
